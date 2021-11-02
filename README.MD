@@ -20,5 +20,6 @@ You can also set the extension URL as your default search engine so when you typ
 * Load unpacked extension
 * Select folder "BingGoogleSearch" (the one with manifest.json in it)
 
-
-### Will add it on the Chrome extension store and Edge addon store soon so sideloading won't be needed.
+# TODO:
+* Add it on the Chrome extension store and Edge addon store soon so sideloading won't be needed.
+* Update to [Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-migration/)
