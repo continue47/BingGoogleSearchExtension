@@ -1,0 +1,28 @@
+{
+    "author": "Andrei Florea",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "description": "Bing and Google search side by side (with iframes).",
+    "icons": {
+        "48": "icons/48.png",
+        "96": "icons/96.png"
+    },
+    "manifest_version": 2,
+    "name": "Bing|Google Search",
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "scripting"
+    ],
+    "version": "0.1",
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "content_scripts": [
+        {
+          "matches": ["https://*.google.com/*", "https://*.bing.com/*"],
+          "js": ["contentscript.js"],
+          "all_frames": true
+        }
+      ]
+}
